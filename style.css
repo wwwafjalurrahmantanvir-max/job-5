@@ -1,0 +1,60 @@
+/* General Style */
+body {
+  background: linear-gradient(120deg, #f0f4ff, #f9f6ff);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header Gradient */
+.header {
+  background: linear-gradient(90deg, #0066ff, #7f00ff);
+}
+
+/* Navbar Gradient */
+.gradient-dark {
+  background: linear-gradient(90deg, #212529, #3c3c3c);
+}
+
+/* Cards with Gradient Background */
+.gradient-card {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gradient-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Banner */
+.banner-img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #ffd700;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+}
+
+/* Gradient animation (Optional Fancy effect) */
+@keyframes moveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.gradient-card {
+  background-size: 200% 200%;
+  animation: moveGradient 6s ease infinite;
+}
